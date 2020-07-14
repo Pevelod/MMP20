@@ -282,9 +282,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.01}
+  m_Offset: {x: 0, y: 0.10658123}
   serializedVersion: 2
-  m_Radius: 1.5
+  m_Radius: 4.0979505
 --- !u!212 &510239272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -342,7 +342,7 @@ Transform:
   m_GameObject: {fileID: 510239269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.33, y: 0.32, z: 0}
-  m_LocalScale: {x: 0.082278915, y: 0.07557248, z: 0.100096}
+  m_LocalScale: {x: 0.079328395, y: 0.072862454, z: 0.09650656}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -361,8 +361,8 @@ SpringJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
+  m_Anchor: {x: 0.00000081281905, y: -0.00000013279197}
+  m_ConnectedAnchor: {x: 0.0000009130447, y: 0.00000007912956}
   m_AutoConfigureDistance: 1
   m_Distance: 0.05385161
   m_DampingRatio: 0
