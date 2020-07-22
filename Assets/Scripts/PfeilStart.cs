@@ -13,7 +13,7 @@ public class PfeilStart : MonoBehaviour
     {
         if (isPressed)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single); //Ohne Funktion
         }
     }
 
