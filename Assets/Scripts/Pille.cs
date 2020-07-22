@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ball : MonoBehaviour {
+public class Pille : MonoBehaviour {
 
     public Rigidbody2D rb;
     public Rigidbody2D hook;
 
     public float releaseTime = .15f;
-    public float maxDragDistance = 1.5f;
+    public float maxDragDistance = 3f;
 
     private bool isPressed = false;
 
     public GameObject deathEffect;
+
+
 
     void Update()
     {
@@ -21,7 +23,7 @@ public class Ball : MonoBehaviour {
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             if (Vector3.Distance(mousePos, hook.position) > maxDragDistance)
-                rb.position = hook.position + (mousePos - hook.position).normalized * maxDragDistance * 1.2f; // maxDragDistance *1.2f fuer doppelte Staerke
+                rb.position = hook.position + (mousePos - hook.position).normalized * maxDragDistance * 5f; // maxDragDistance *1.2f fuer doppelte Staerke
 
             else
                 rb.position = mousePos; 
