@@ -14,8 +14,6 @@ public class Pille : MonoBehaviour {
 
     public GameObject deathEffect;
 
-
-
     void Update()
     {
         if (isPressed)
