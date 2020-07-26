@@ -59,3 +59,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+*.unity
+Assets/Level2.unity
+Assets/Level3.unity
+Assets/Start_Scene.unity
