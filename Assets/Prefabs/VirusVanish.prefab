@@ -41,7 +41,7 @@ ParticleSystem:
   m_GameObject: {fileID: 8874968691507502038}
   serializedVersion: 6
   lengthInSec: 1
-  simulationSpeed: 5
+  simulationSpeed: 6.03
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -284,7 +284,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.7
+      scalar: 1.67
       minScalar: 0.3
       maxCurve:
         serializedVersion: 2
@@ -600,7 +600,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 2000
     size3D: 0
     rotation3D: 0
     gravityModifier:

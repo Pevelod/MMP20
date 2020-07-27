@@ -9,11 +9,14 @@ public class GameManager : MonoBehaviour
     public Pille pille;
     public VirusScript virus;
 
-    public int pillenCounter = 2;
-    
-    bool gamesEnded = false;
+    Enemy1 enemy1;
+    Enemy2 enemy2;
+    Enemy3 enemy3;
 
-    bool levelEnded = false;
+    
+    //bool gamesEnded = false;
+
+    //bool levelEnded = false;
 
 
     // Start is called before the first frame update
@@ -28,4 +31,7 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+
+
 }
