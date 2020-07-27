@@ -530,11 +530,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423585505}
   m_LocalRotation: {x: -0, y: -0, z: 0.000034061486, w: 1}
-  m_LocalPosition: {x: 5.62, y: -13.05, z: 0}
+  m_LocalPosition: {x: -1.8651905, y: -13.487157, z: 7.770934}
   m_LocalScale: {x: 2.2011473, y: 1.8272552, z: -0.19}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 2078745146}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.004}
 --- !u!1 &435737858
 GameObject:
@@ -683,7 +683,7 @@ GameObject:
   - component: {fileID: 445634414}
   m_Layer: 0
   m_Name: Virus
-  m_TagString: Untagged
+  m_TagString: Virus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -703,6 +703,8 @@ MonoBehaviour:
   deathEffect: {fileID: 8874968691507502038, guid: 7968b61c125164f84a03c2143ca970b2,
     type: 3}
   health: 4
+  istAmLeben: 1
+  virus_StatusTXT: Virus lebt!
 --- !u!50 &445634415
 Rigidbody2D:
   serializedVersion: 4
@@ -795,12 +797,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445634413}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 24.41, y: -22.02, z: 0}
   m_LocalScale: {x: 0.86542755, y: 0.9602496, z: 0.16875601}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &664146939
 GameObject:
@@ -1457,7 +1459,7 @@ Transform:
   m_Children:
   - {fileID: 153212607}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1118054159
 GameObject:
@@ -1814,11 +1816,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234043433}
   m_LocalRotation: {x: -0, y: -0, z: 0.000034061486, w: 1}
-  m_LocalPosition: {x: 31.94, y: -11.61, z: 0}
+  m_LocalPosition: {x: 24.454811, y: -12.047156, z: 7.770934}
   m_LocalScale: {x: 1.5916839, y: 2.065595, z: -0.19}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 2078745146}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.004}
 --- !u!1 &1306781422
 GameObject:
@@ -2390,11 +2392,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904835139}
   m_LocalRotation: {x: -0, y: -0, z: -0.0015636556, w: -0.9999988}
-  m_LocalPosition: {x: 5.733, y: 8.681, z: 0}
-  m_LocalScale: {x: 1.3367535, y: 1.5291356, z: 0.19144861}
+  m_LocalPosition: {x: -1.7521906, y: 8.243843, z: 7.770934}
+  m_LocalScale: {x: 1.3367535, y: 1.5291353, z: 0.19144861}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 2078745146}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -359.821}
 --- !u!1 &1984805252
 GameObject:
@@ -2475,6 +2477,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2078745145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2078745146}
+  m_Layer: 0
+  m_Name: Objects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2078745146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078745145}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.4851904, y: 0.43715656, z: -7.770934}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1904835143}
+  - {fileID: 1234043437}
+  - {fileID: 423585509}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2119968986
 GameObject:
   m_ObjectHideFlags: 0
@@ -2539,5 +2574,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -369,11 +369,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269680650}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071557, w: 0.70705795}
-  m_LocalPosition: {x: 38, y: -23.2, z: 0}
-  m_LocalScale: {x: 1.4875549, y: 1.4150482, z: -0.19}
+  m_LocalPosition: {x: 28.31221, y: -26.043617, z: 16.546875}
+  m_LocalScale: {x: 1.4875554, y: 1.4150487, z: -0.19}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1089708800}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.008}
 --- !u!1 &445634413
 GameObject:
@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 445634414}
   m_Layer: 0
   m_Name: Virus
-  m_TagString: Untagged
+  m_TagString: Virus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -410,6 +410,8 @@ MonoBehaviour:
   deathEffect: {fileID: 8874968691507502038, guid: 7968b61c125164f84a03c2143ca970b2,
     type: 3}
   health: 4
+  istAmLeben: 1
+  virus_StatusTXT: Virus lebt!
 --- !u!50 &445634415
 Rigidbody2D:
   serializedVersion: 4
@@ -507,7 +509,7 @@ Transform:
   m_LocalScale: {x: 0.86542755, y: 0.9602496, z: 0.16875601}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &487137215
 GameObject:
@@ -895,11 +897,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827577310}
   m_LocalRotation: {x: -0, y: -0, z: 0.0060201627, w: 0.9999819}
-  m_LocalPosition: {x: 10.8, y: -12.9, z: 0}
-  m_LocalScale: {x: 1.7870737, y: 1.9053801, z: 0.19144861}
+  m_LocalPosition: {x: 1.1122112, y: -15.743616, z: 16.546875}
+  m_LocalScale: {x: 1.7870737, y: 1.9053804, z: 0.19144861}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1089708800}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.69000006}
 --- !u!1 &921328648
 GameObject:
@@ -965,7 +967,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1074485266
 GameObject:
@@ -1099,7 +1101,7 @@ MonoBehaviour:
   rb: {fileID: 1074485270}
   hook: {fileID: 1787215546}
   releaseTime: 0.15
-  maxDragDistance: 2
+  maxDragDistance: 2.5
   deathEffect: {fileID: 0}
 --- !u!231 &1074485269
 SpringJoint2D:
@@ -1219,7 +1221,43 @@ Transform:
   m_Children:
   - {fileID: 1787215548}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1089708799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1089708800}
+  m_Layer: 0
+  m_Name: Objects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1089708800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089708799}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.687789, y: 2.8436165, z: -16.546875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1157226331}
+  - {fileID: 1904835143}
+  - {fileID: 1234043437}
+  - {fileID: 1857510639}
+  - {fileID: 827577314}
+  - {fileID: 269680654}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1118054159
 GameObject:
@@ -1340,7 +1378,7 @@ GameObject:
   - component: {fileID: 1157226329}
   - component: {fileID: 1157226328}
   m_Layer: 0
-  m_Name: RG_1 (1)
+  m_Name: Spritze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1449,11 +1487,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157226327}
   m_LocalRotation: {x: -0, y: -0, z: 0.0773074, w: 0.9970073}
-  m_LocalPosition: {x: -9.17, y: -11.76, z: 0}
+  m_LocalPosition: {x: -18.857788, y: -14.603617, z: 16.546875}
   m_LocalScale: {x: 2.6091716, y: 2.4591355, z: 0.19144861}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1089708800}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.868}
 --- !u!1 &1211235935
 GameObject:
@@ -1734,11 +1772,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234043433}
   m_LocalRotation: {x: -0, y: -0, z: 0.066113174, w: 0.99781215}
-  m_LocalPosition: {x: 5.7, y: 14.2, z: 0}
-  m_LocalScale: {x: 1.5068932, y: 1.5211769, z: -0.19}
+  m_LocalPosition: {x: -3.9877892, y: 11.356383, z: 16.546875}
+  m_LocalScale: {x: 1.5068932, y: 1.5211767, z: -0.19}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1089708800}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.5820003}
 --- !u!1 &1586145967
 GameObject:
@@ -2711,12 +2749,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857510635}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0032155346, w: -0.9999948}
-  m_LocalPosition: {x: 24.7, y: -12.99, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0032155348, w: -0.9999949}
+  m_LocalPosition: {x: 15.012212, y: -15.833616, z: 16.546875}
   m_LocalScale: {x: 1.9016145, y: 1.8505276, z: 0.19144861}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1089708800}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.36800003}
 --- !u!1 &1904835139
 GameObject:
@@ -2840,11 +2878,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904835139}
   m_LocalRotation: {x: -0, y: -0, z: 0.0004107491, w: -1}
-  m_LocalPosition: {x: 25, y: 5.72, z: 0}
-  m_LocalScale: {x: 1.1833031, y: 0.8462173, z: 0.19144861}
+  m_LocalPosition: {x: 15.312211, y: 2.8763833, z: 16.546875}
+  m_LocalScale: {x: 1.1833029, y: 0.8462173, z: 0.19144861}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1089708800}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.047000002}
 --- !u!1 &1984805252
 GameObject:

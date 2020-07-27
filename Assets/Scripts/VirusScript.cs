@@ -11,6 +11,18 @@ public class VirusScript : MonoBehaviour
     bool isCoroutineExecuting = false;
     public float health = 4f;
 
+    //UI Infos
+    public bool istAmLeben = true;
+    public string virus_StatusTXT = "Virus lebt!";
+
+    public String getVirusStatusTXT()
+    {
+        return virus_StatusTXT;
+    }
+    public void update()
+    {
+        Debug.Log(istAmLeben);
+    }
      IEnumerator ExecuteAfterTime(float time, Action task)
     {
         if (isCoroutineExecuting)
@@ -31,7 +43,9 @@ public class VirusScript : MonoBehaviour
         if (colInfo.relativeVelocity.magnitude > health)
         {
             
+            virus_StatusTXT = "Virus ist tot!";
             Die();
+            
 
 
         }
