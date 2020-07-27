@@ -27,9 +27,13 @@ public class Manipulate : MonoBehaviour
     {
         {
             SceneManager.LoadScene(0);
-        }
+        }     
+    }
 
-            
+    public void Quit_Button()
+    {
+        Debug.Log("QUIT gedrueckt");
+        Application.Quit();
     }
     
 }
