@@ -5,17 +5,26 @@ using UnityEngine.UI;
 
 public class CountdownController : MonoBehaviour
 {
-    public float totalTime;
-    public Text text;
-    private float seconds;
+    public int countdownTime;
+    public int beginCount;
+    public Text countdownDisplay;
+    private int seconds;
 
-
-    public void update()
+    public void start()
     {
-        totalTime -= Time.deltaTime;
-
-        seconds = (int)(totalTime % 60);
-
-        text.text = seconds.ToString();
+        StartCoroutine(CountdownToStart());
     }
+
+    IEnumerator CountdownToStart()
+    {
+        while(countdownTime > 0)
+        {
+            countdownDisplay.text = countdownTime.ToString();
+
+            yield return new WaitForSeconds(1f);
+
+            countdownTime--;
+        }
+    }
+
 }
