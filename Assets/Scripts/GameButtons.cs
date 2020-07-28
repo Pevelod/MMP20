@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameButtons : MonoBehaviour
 {
 
-    int scenes = 3;
+    
     public void Play_Button()
     {
         SceneManager.LoadScene(1);
