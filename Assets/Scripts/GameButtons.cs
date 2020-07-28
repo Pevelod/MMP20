@@ -14,7 +14,7 @@ public class GameButtons : MonoBehaviour
 
     public void PlayHard_Button()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(6);
     }
 
     public void Weiter_Button()
@@ -25,7 +25,7 @@ public class GameButtons : MonoBehaviour
     public void Impressum_Button()
         {
             Debug.Log("Impressum gedrueckt");
-            SceneManager.LoadScene(9);
+            SceneManager.LoadScene(11);
         }
 
     public void Quit_Button()
