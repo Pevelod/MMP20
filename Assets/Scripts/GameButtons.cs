@@ -5,14 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class GameButtons : MonoBehaviour
 {
+
+    
     public void Play_Button()
     {
         SceneManager.LoadScene(1);
     }
 
+    public void PlayHard_Button()
+    {
+        SceneManager.LoadScene(4);
+    }
+
     public void Weiter_Button()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+    public void Impressum_Button()
+        {
+            Debug.Log("Impressum gedrueckt");
+            SceneManager.LoadScene(7);
         }
 
     public void Quit_Button()

@@ -8,9 +8,22 @@ public class VirusScript : MonoBehaviour
 {
     public GameObject deathEffect;
 
+    int scenes = 3;
     bool isCoroutineExecuting = false;
     public float health = 4f;
 
+    //UI Infos
+    public bool istAmLeben = true;
+    public string virus_StatusTXT = "Virus lebt!";
+
+    public String getVirusStatusTXT()
+    {
+        return virus_StatusTXT;
+    }
+    public void update()
+    {
+        Debug.Log(istAmLeben);
+    }
      IEnumerator ExecuteAfterTime(float time, Action task)
     {
         if (isCoroutineExecuting)
@@ -31,7 +44,9 @@ public class VirusScript : MonoBehaviour
         if (colInfo.relativeVelocity.magnitude > health)
         {
             
+            virus_StatusTXT = "Virus ist tot!";
             Die();
+            
 
 
         }
@@ -45,20 +60,34 @@ public class VirusScript : MonoBehaviour
             {            
                 
                 Destroy(gameObject);
-        // Destroy(gameObject.GetComponent(Ball);
+
+                if (SceneManager.GetActiveScene().buildIndex < scenes+1)
+                {
+                    if (SceneManager.GetActiveScene().buildIndex == scenes)
+                    {
+                        SceneManager.LoadScene(scenes*2+1, LoadSceneMode.Single);
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+                    }
+                }
+
+                if (SceneManager.GetActiveScene().buildIndex > scenes)
+                {
+                    if (SceneManager.GetActiveScene().buildIndex == scenes*2)
+                    {
+                        SceneManager.LoadScene(scenes*2+1, LoadSceneMode.Single);
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+                    }
+                }
+                        
+                        
+                    
         
-        if (SceneManager.GetActiveScene().buildIndex < 3)
-            {
-                
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
-            }
-            else
-            {
-             
-                SceneManager.LoadScene(0, LoadSceneMode.Single);
-            }
-
-
             }));
         
         
@@ -67,6 +96,3 @@ public class VirusScript : MonoBehaviour
 
     }
 }
-
-
-// laeuft 49:13

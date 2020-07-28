@@ -2,29 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class CountdownController : MonoBehaviour
 {
-    public int countdownTime;
-    public int beginCount;
-    public Text countdownDisplay;
-    private int seconds;
+    
 
+    int countDownStartValue = 9;
+    public Text timerUI;
     public void start()
     {
-        StartCoroutine(CountdownToStart());
+        countTimer();
     }
 
-    IEnumerator CountdownToStart()
-    {
-        while(countdownTime > 0)
+    public void countTimer()
         {
-            countdownDisplay.text = countdownTime.ToString();
-
-            yield return new WaitForSeconds(1f);
-
-            countdownTime--;
+            if (countDownStartValue > 0)
+            {
+                TimeSpan spanTime = TimeSpan.FromSeconds(countDownStartValue);
+                Debug.Log("Timer: " + countDownStartValue + " : " + spanTime.Seconds);
+                timerUI.text = spanTime.Seconds.ToString();
+                countDownStartValue--;
+                Invoke("countDownTimer", 1.0f);
+                
+            }
+            else
+            {
+                Debug.Log("Countdown Ende");
+            }
         }
-    }
 
 }
