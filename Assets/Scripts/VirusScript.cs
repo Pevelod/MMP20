@@ -8,7 +8,7 @@ public class VirusScript : MonoBehaviour
 {
     public GameObject deathEffect;
 
-    int scenes = 4;
+    int scenes = 5;
     bool isCoroutineExecuting = false;
     public float health = 4f;
 
