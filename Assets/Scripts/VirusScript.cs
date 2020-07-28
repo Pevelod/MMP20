@@ -8,7 +8,7 @@ public class VirusScript : MonoBehaviour
 {
     public GameObject deathEffect;
 
-    int scenes = 3;
+    int scenes = 4;
     bool isCoroutineExecuting = false;
     public float health = 4f;
 
@@ -56,10 +56,12 @@ public class VirusScript : MonoBehaviour
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         
-        StartCoroutine(ExecuteAfterTime(1f, () =>
+        StartCoroutine(ExecuteAfterTime(2f, () =>
             {            
                 
                 Destroy(gameObject);
+
+                Debug.Log("Aktuelle Scene: "+SceneManager.GetActiveScene().buildIndex);
 
                 if (SceneManager.GetActiveScene().buildIndex < scenes+1)
                 {
