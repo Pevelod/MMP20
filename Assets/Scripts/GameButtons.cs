@@ -10,6 +10,11 @@ public class GameButtons : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void PlayHard_Button()
+    {
+        SceneManager.LoadScene(4);
+    }
+
     public void Weiter_Button()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
